@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilo base para a seção "Sobre a Loja" */
+.sobre-loja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 20px;
+    background-color: #f4f4f4;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Força a proporção quadrada */
+    object-fit: cover;    /* Garante que a imagem preencha o quadrado sem distorção */
+    border-radius: 8px;   /* Deixa os cantos arredondados */
+}
+
+.sobre-texto {
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Estilo base para a seção de produtos */
+.produtos {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.lista-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.produto {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.produto h3 {
+    margin: 10px 0;
+}
+
+.produto button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.produto button:hover {
+    background-color: #555;
+}
+
+/* Layout para telas Desktop (a partir de 1024px) */
+@media (min-width: 1024px) {
+    .sobre-loja {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .sobre-imagem, .sobre-texto {
+        width: 50%;
+    }
+
+    .lista-produtos {
+        justify-content: flex-start;
+        gap: 40px;
+    }
+
+    .produto {
+        max-width: 220px;
+    }
+}
+
+/* Layout para tablets (entre 641px e 1023px) */
+@media (min-width: 641px) and (max-width: 1023px) {
+    .sobre-loja {
+        flex-direction: row;
+        padding: 30px 15px;
+    }
+
+    .sobre-imagem, .sobre-texto {
+        width: 50%;
+    }
+
+    .lista-produtos {
+        gap: 30px;
+    }
+
+    .produto {
+        max-width: 200px;
+    }
+}
+
+/* Layout para mobile (até 640px) */
+@media (max-width: 640px) {
+    .sobre-loja {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .sobre-imagem img {
+        max-width: 300px;
+    }
+
+    .lista-produtos {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .produto {
+        max-width: 100%;
+    }
+}

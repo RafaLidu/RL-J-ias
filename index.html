@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à RL Jóias</h1>
+        <nav>
+            <a href="#sobre">Sobre a Loja</a>
+            <a href="#produtos">Produtos</a>
+        </nav>
+    </header>
+    
+    <section id="sobre" class="sobre-loja">
+        <div class="sobre-imagem">
+            <img src="./Imagens/imagem capa.webp" alt="Imagem da Loja">
+        </div>
+        <div class="sobre-texto">
+            <h2>Sobre a Loja</h2>
+            <p>Na RL Jóias, acreditamos que cada joia conta uma história. Desde o momento da criação até o instante em que se torna parte da sua vida, nossas peças refletem elegância, exclusividade e o brilho que cada cliente merece. Com uma seleção cuidadosa de materiais preciosos e um compromisso inabalável com a qualidade, nossa loja oferece mais do que acessórios: proporcionamos uma experiência que traduz o luxo em cada detalhe.
+
+                Aqui, tradição e inovação se encontram para dar vida a joias que celebram momentos especiais e se tornam um legado pessoal. Deixe-se envolver pelo encanto e sofisticação das nossas coleções, pensadas para pessoas que reconhecem o valor da excelência.
+                
+                Seja bem-vindo à RL Jóias, onde cada peça é feita para brilhar ao seu lado.
+                
+                </p>
+        </div>
+    </section>
+
+    <section id="produtos" class="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="lista-produtos">
+            <div class="produto">
+                <img src="./Imagens/imagem 1.jpg" alt="Anéis de ouro">
+                <h3>Anéis de ouro</h3>
+                <p>Diversos preços e tamanhos.</p>
+                <button onclick="adicionarAoCarrinho('Anéis de ouro')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="./Imagens/imagem 2.jpg" alt="Anéis de prata">
+                <h3>Anéis de prata</h3>
+                <p>Diversos preços e tamanhos.</p>
+                <button onclick="adicionarAoCarrinho('Anéis de prata')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="./Imagens/imagem 6.jpg" alt="Relógio de prata">
+                <h3>Relógio de prata</h3>
+                <p>Relógio de bolso</p>
+                <button onclick="adicionarAoCarrinho('Relógio de prata')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="./Imagens/imagem 5.jpg" alt="Colar de prata">
+                <h3>Colar de prata</h3>
+                <p>Colar de prata feminino</p>
+                <button onclick="adicionarAoCarrinho('Colar de prata')">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nossa Loja Virtual</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
